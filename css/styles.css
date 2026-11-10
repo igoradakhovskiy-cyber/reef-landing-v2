@@ -343,8 +343,17 @@ a.topbar__link:hover { color: var(--sand); }
 .flow li::before { content: counter(flow, decimal-leading-zero); position: absolute; left: 0; top: 19px; font-weight: 300; font-size: 30px; line-height: 1; color: var(--terracotta); letter-spacing: -.02em; }
 .flow li b { color: var(--text); font-weight: 500; }
 @media (min-width: 640px) { .flow li { padding-left: 96px; } }
-.away__why-title { margin-top: 56px; font-weight: 300; font-size: clamp(26px, 2.6vw, 34px); }
+/* «Who the guests are»: отдельный блок под сеткой, по центру страницы */
+.away__guests { margin-top: 64px; }
+.away__why-title { font-weight: 300; font-size: clamp(28px, 3.4vw, 48px); line-height: 1.05; letter-spacing: -.015em; }
 .away__why-lead { margin-top: 12px; color: var(--text-2); }
+@media (min-width: 960px) {
+  .away__guests { max-width: calc(1080px + var(--gutter) * 2); margin-top: 112px; }
+  .away__why-title, .away__why-lead { text-align: center; }
+  .away__guests .guests { margin-top: 48px; gap: 56px; }
+  .away__guests .guests__kite { margin-top: 48px; padding: 26px 32px; }
+  .away__guests .why3 { margin-top: 40px; gap: 56px; }
+}
 .guests { display: grid; gap: 32px; margin-top: 26px; }
 @media (min-width: 700px) { .guests { grid-template-columns: 1fr 1fr; gap: 32px; } }
 .guests__h { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 12px; padding-bottom: 12px; border-bottom: 1px solid var(--ink); font-weight: 500; font-size: 17px; }
