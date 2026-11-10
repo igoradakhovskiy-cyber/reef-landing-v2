@@ -343,10 +343,20 @@ a.topbar__link:hover { color: var(--sand); }
 .flow li::before { content: counter(flow, decimal-leading-zero); position: absolute; left: 0; top: 19px; font-weight: 300; font-size: 30px; line-height: 1; color: var(--terracotta); letter-spacing: -.02em; }
 .flow li b { color: var(--text); font-weight: 500; }
 @media (min-width: 640px) { .flow li { padding-left: 96px; } }
-.away__side { margin-top: 28px; max-width: 560px; color: var(--text-2); font-size: 16px; }
 .away__why-title { margin-top: 56px; font-weight: 300; font-size: clamp(26px, 2.6vw, 34px); }
-.why3 { display: grid; gap: 18px; margin-top: 24px; }
-@media (min-width: 700px) { .why3 { grid-template-columns: repeat(3, 1fr); gap: 28px; } }
+.away__why-lead { margin-top: 12px; color: var(--text-2); }
+.guests { display: grid; gap: 32px; margin-top: 26px; }
+@media (min-width: 700px) { .guests { grid-template-columns: 1fr 1fr; gap: 32px; } }
+.guests__h { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 12px; padding-bottom: 12px; border-bottom: 1px solid var(--ink); font-weight: 500; font-size: 17px; }
+.guests__h span { font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--text-2); }
+.guests li { padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 15.5px; line-height: 1.45; color: var(--text-2); }
+.guests__note { margin-top: 14px; font-size: 14px; line-height: 1.5; color: var(--text-2); }
+.guests__kite { margin-top: 32px; padding: 20px 22px; background: var(--bg-2); font-size: 15.5px; line-height: 1.55; color: var(--text-2); }
+.guests__kite b { color: var(--text); font-weight: 500; }
+.guests__kite a { color: var(--terracotta); text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
+.guests__kite a:hover { color: var(--terracotta-deep); }
+.why3 { display: grid; gap: 18px; margin-top: 32px; }
+@media (min-width: 700px) { .why3 { grid-template-columns: repeat(2, 1fr); gap: 28px; } }
 .why3 li { border-top: 1px solid var(--line-2); padding-top: 14px; font-size: 15.5px; color: var(--text-2); }
 .why3 b { display: block; color: var(--text); font-weight: 500; font-size: 17px; line-height: 1.3; margin-bottom: 6px; }
 

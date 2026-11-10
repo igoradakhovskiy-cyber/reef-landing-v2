@@ -16,7 +16,7 @@
   var PHOTO = '.away__media, .included__media figure, .day__item figure, .kite__media, .tile, .zmap';
   var STAGGER = [
     '.sec-head', '.own__intro', '.final__body', '.offer__main', '.kite__foot',
-    '.facts__list', '.cards4', '.units__track', '.counters', '.flow', '.why3', '.rates__table tbody', '.calc__steps',
+    '.facts__list', '.cards4', '.units__track', '.counters', '.flow', '.guests', '.guests ul', '.why3', '.rates__table tbody', '.calc__steps',
     '.amen', '.wind', '.kite__points', '.points', '.bignums', '.why__lines', '.checklist', '.terms', '.netcard ul', '.eng__list',
     '.devnums', '.portfolio', '.stages__list', '.offer__figs', '.countdown__nums', '.steps', '.faq__list', '.checks'
   ].join(', ');
